@@ -6,7 +6,7 @@ será possível obter a distância percorrida com a seguinte fórmula DISTÂNCIA
 Tendo o valor da distância, basta calcular a quantidade de litros com a fórmula
 LITROS_USADOS = DISTÂNCIA/12. Deve ser fornecido como resposta: a velocidade média, o tempo gasto
 na viagem, a distância percorrida e a quantidade de litros utilizada na viagem.
-aaaaa"""
+"""
 tempo = float(input('digite o tempo gasto:'))
 velocidade = int(input('digite a velocidade media:'))
 distancia = tempo * velocidade
