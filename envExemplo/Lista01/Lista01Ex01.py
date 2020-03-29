@@ -14,4 +14,4 @@ litros_usados= distancia/12
 print('o tempo gasto foi de {:.2f} horas'.format(tempo))
 print('A velocidade media foi de {} km/h'.format(velocidade))
 print('A distancia percorrida foi de {} km'.format(distancia))
-print('A quantidade de combustivel foi de {:.2f} L'.format(litros_usados))
+print('A quantidade de combustivel foi de {:.2f} Litros'.format(litros_usados))
