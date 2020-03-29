@@ -10,5 +10,5 @@ totaldealunos= sexo1 + sexo2
 porcentmasc = sexo1/totaldealunos*100
 porcentfemi = sexo2/totaldealunos*100
 print('o total de alunos é {}'.format(totaldealunos))
-print('a porcentagem de alunos masculinos é de {:.2f}%'.format(porcentmasc))
-print('a porcentagem de alunas femininas é de {:.2f}%'.format(porcentfemi))
+print('a porcentagem de alunos é de {:.2f}%'.format(porcentmasc))
+print('a porcentagem de alunas é de {:.2f}%'.format(porcentfemi))
