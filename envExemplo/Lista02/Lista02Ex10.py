@@ -7,12 +7,12 @@ quant = par = ímpar = 0
 num = int(input("Número: "))
 
 while num != 0:
-    num = int(input("Número: "))
     quant = quant + 1
     if num % 2 == 0:
         par = par + 1
     if num % 2 == 1:
         ímpar = ímpar + 1
+    num = int(input("Número: "))
 print('O total de números digitados foi de {}' .format(quant))
 print('A quantidade de números pares são {}' .format(par))
 print('A quantidade de números ímpares são {}' .format(ímpar))
