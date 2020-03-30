@@ -7,7 +7,7 @@ Ao final o programa deve exibir no vídeo o conteúdo de C.
 A= []
 B= []
 C= []
-for i in range(3):
+for i in range(4):
     A.append(int(input('Digite um número para A: ')))
     B.append(int(input('Digite um número para B: ')))
     C.append(A[i] + B[i])
