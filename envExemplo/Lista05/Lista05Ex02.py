@@ -38,7 +38,7 @@ for p in turma:
 print()
 print('D) Lista das alunos que estão acima da média: ')
 for p in turma:
-    if p['nota'] >= media:
+    if p['nota'] > media:
         print('    ', end='')
         for k, v in p.items():
             print(f'{k} = {v}; ', end='')
