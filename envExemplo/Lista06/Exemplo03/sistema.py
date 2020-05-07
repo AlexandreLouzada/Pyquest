@@ -1,4 +1,4 @@
-from lib.interface import *
+1from lib.interface import *
 from lib.arquivo import *
 from time import sleep
 arq = 'exemploarquivo.txt'
