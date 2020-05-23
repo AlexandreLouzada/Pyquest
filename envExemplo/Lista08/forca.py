@@ -1,3 +1,5 @@
+#Programa da forca - V1.0
+
 def forca(x=0):
   if x==0:
     print("------------")

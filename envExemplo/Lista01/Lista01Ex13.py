@@ -14,4 +14,4 @@ elif num02 > num01 and num02 > num03:
     maior = num02
 elif num03 > num01 and num03 > num02:
     maior = num03
-    print('Maior número: {}'.format(maior))
+print('Maior número: {}'.format(maior))
