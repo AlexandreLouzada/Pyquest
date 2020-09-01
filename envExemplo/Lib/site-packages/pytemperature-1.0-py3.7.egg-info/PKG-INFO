@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: pytemperature
+Version: 1.0
+Summary: Scale of temperature
+Home-page: https://python3.wannaphong.com
+Author: Wannaphong Phatthiyaphaibun
+Author-email: wannaphong@yahoo.com
+License: MIT
+Description: ï»¿=============
+        pytemperature
+        =============
+            A module that helps to convert temperature units.
+        
+        **Examples of usage**
+        
+        
+        >>> import pytemperature
+        >>> pytemperature.c2f(37.78) # Celsius to Fahrenheit
+        100.0
+        >>> pytemperature.f2c(104) # Fahrenheit to Celsius
+        40.0
+        >>> pytemperature.c2k(40) # Celsius to Kelvin
+        313.15
+        >>> pytemperature.k2c(273.15) # Kelvin to Celsius
+        0.0
+        >>> pytemperature.k2f(273.15) # Kelvin to Fahrenheit
+        31.98
+        >>> pytemperature.f2k(100) # Fahrenheit to Kelvin
+        310.93
+        >>> pytemperature.r2c(80) # Romoe to Celsius
+        100.0
+        >>> pytemperature.c2r(100) # Romoe to Celsius
+        80.0
+        >>> pytemperature.r2k(80) #Romoe to Celsius
+        373.15
+Keywords: temperature science
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: IronPythonProgramming Language :: Python :: Implementation :: JythonProgramming Language :: Python :: Implementation :: PyPyTopic :: Scientific/Engineering
