@@ -6,15 +6,15 @@ que terá peso 2 e calcular, armazenar e imprimir uma nova média.
 Se a nova média for maior ou igual a 6, imprimir “Aprovado”, caso contrário,
 imprimir “Reprovado”.
 """
-nota1= int(input('digite sua primeira nota:'))
-nota2= int(input('digite sua segunda nota:'))
-media= (nota1 + nota2)/2
+nota1 = int(input('digite sua primeira nota:'))
+nota2 = int(input('digite sua segunda nota:'))
+media = (nota1 + nota2) / 2
 if media >= 7:
-    print('aprovado')
-elif media < 7:
-    nota3= int(input('digite sua terceira nota:'))
-    media= (nota1 + nota2 + nota3 * 2) / 4
+    print('Aprovado')
+else:
+    nota3 = int(input('Digite sua terceira nota:'))
+    media = (nota1 + nota2 + nota3 * 2) / 4
     if media >= 6:
-        print('aprovado')
+        print('Aprovado')
     else:
-        print('reprovado')
+        print('Reprovado')
