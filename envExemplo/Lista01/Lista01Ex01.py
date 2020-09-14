@@ -7,11 +7,12 @@ Tendo o valor da distância, basta calcular a quantidade de litros com a fórmul
 LITROS_USADOS = DISTÂNCIA/12. Deve ser fornecido como resposta: a velocidade média, o tempo gasto
 na viagem, a distância percorrida e a quantidade de litros utilizada na viagem.
 """
-tempo = float(input('digite o tempo gasto (HH:MM):'))
+tempo = float(input('Digite o tempo gasto (HH:MM):'))
 velocidade = int(input('digite a velocidade media:'))
 distancia = tempo * velocidade
-litros_usados= distancia/12
-print('o tempo gasto foi de {:.2f} horas'.format(tempo))
+litros_usados = distancia / 12
+
+print('O tempo gasto foi de {:.2f} horas'.format(tempo))
 print('A velocidade media foi de {} km/h'.format(velocidade))
 print('A distancia percorrida foi de {} km'.format(distancia))
 print('A quantidade de combustivel foi de {:.2f} Litros'.format(litros_usados))

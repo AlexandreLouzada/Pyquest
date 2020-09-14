@@ -4,7 +4,7 @@ Ao final escreva a média das idades.
 """
 soma = 0
 media = 0
-for cont in range (10):
+for cont in range(10):
     idade = int(input('Digite sua idade: '))
     soma += idade
 media = soma/10

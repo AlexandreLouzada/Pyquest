@@ -3,7 +3,7 @@ Crie um programa que leia o nome e a altura de 10 pessoas e ao final escreva:
 a altura média do grupo, o nome e a altura da pessoa mais alta.
 """
 maior = soma = media = 0
-for cont in range (10):
+for cont in range(10):
     nome = input('Digite seu nome: ')
     altura = float(input('Digite sua altura: '))
     soma += altura

@@ -1,9 +1,9 @@
 """
-Construir um programa leia um número inteiro entre 1 e 7 e imprima o nome do dia
+Construir um programa que leia um número inteiro entre 1 e 7 e imprima o nome do dia
 da semana correspondente ao número, caso o número esteja fora do intervalo entre
 1 e 7, imprimir “Dia Inválido”.
 """
-semana= int(input('digite um numero:'))
+semana = int(input('digite um numero:'))
 if semana == 1:
     print('domingo')
 elif semana == 2:
