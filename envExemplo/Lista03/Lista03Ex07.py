@@ -5,9 +5,10 @@ e armazene o resultado em um outro vetor. Ao final os dados do segundo
 vetor devem ser exibidos no vídeo.
 """
 lista = []
-quadrad = []
+quadrado = []
 for n in range(4):
     lista.append(int(input('Digite um número: ')))
-    quadrad.append(lista[n] * lista[n])
+    quadrado.append(lista[n] * lista[n])
+
 print(f'Os números digitados foram     {lista}')
-print(f'Seus respectivos quadrados são {quadrad}')
+print(f'Seus respectivos quadrados são {quadrado}')

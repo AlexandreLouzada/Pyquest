@@ -1,13 +1,13 @@
 """
-Faça um programa utilizando vetores que leia o nome e a altura de 50 pessoas
+Faça um programa utilizando listas que leia o nome e a altura de 50 pessoas
 e ao final escreva o nome e a altura das pessoas com mais de 1,70 metros.
 """
-x=3
-listaAltura = []
-listaNome = []
-for c in range(x):
-      listaNome.append(input('Nome: '))
-      listaAltura.append(float(input('Altura: ')))
-for ind in range(x):
-    if listaAltura[ind] > 1.7:
-        print(f'Nome:{listaNome[ind]:10} Altura:{listaAltura[ind]:.2f} m')
+x = 3
+lista_altura = []
+lista_nome = []
+for contador in range(x):
+    lista_nome.append(input('Nome: '))
+    lista_altura.append(float(input('Altura: ')))
+for indice in range(x):
+    if lista_altura[indice] > 1.7:
+        print(f'Nome:{lista_nome[indice]:10} Altura:{lista_altura[indice]:.2f} m')
