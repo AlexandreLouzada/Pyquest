@@ -6,9 +6,10 @@ nomes da mulheres e os dados dos alunos com nota superior
 a média da turma.
 """
 
-turma= list()
+turma = list()
 aluno = dict()
 soma = media = 0
+
 while True:
     aluno.clear()
     aluno['nome'] = str(input('Nome: '))

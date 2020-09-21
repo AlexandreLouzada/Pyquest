@@ -1,11 +1,13 @@
-'''
+"""
 Faça um programa que leia uma distância em
 quilômetros e ao final calcule e informe a distância
 convertida em metros
-'''
+"""
+
 
 def converte_metros(dist):
     return dist * 1000
+
 
 # Programa principal
 print('')

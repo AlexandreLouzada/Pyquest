@@ -3,14 +3,14 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
 
-    def setNome(self, nome):
+    def setnome(self, nome):
         self.nome = nome
 
-    def setIdade(self, idade):
+    def setidade(self, idade):
         self.idade = idade
 
-    def getNome(self):
+    def getnome(self):
         return self.nome
 
-    def getIdade(self):
+    def getidade(self):
         return self.idade

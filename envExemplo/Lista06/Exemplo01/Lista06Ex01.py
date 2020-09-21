@@ -1,4 +1,5 @@
 from calcula import *
+
 valor1 = float(input('Valor 1:'))
 valor2 = float(input('Valor 2:'))
 print()

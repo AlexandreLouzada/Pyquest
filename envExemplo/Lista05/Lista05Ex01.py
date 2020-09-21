@@ -1,5 +1,6 @@
-listagem= list()
-candidato= dict()
+listagem = list()
+candidato = dict()
+
 while True:
     candidato.clear()
     candidato['numero'] = int(input('Numero: '))
@@ -19,9 +20,9 @@ print(f'Listagem por ordem de classificação dos {len(listagem)} candidatos:')
 print('-=' * 30)
 print()
 
-ordena_nota = sorted(listagem, key = lambda k: k['nota'], reverse = True)
+ordena_nota = sorted(listagem, key=lambda chave: k['nota'], reverse=True)
 
 for ind in listagem:
-    for k,v in ind.items():
+    for k, v in ind.items():
         print(f'{k} : {v} ', end='')
     print()

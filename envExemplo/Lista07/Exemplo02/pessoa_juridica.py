@@ -1,12 +1,13 @@
 from pessoa import Pessoa
 
+
 class PessoaJuridica(Pessoa):
-    def __init__(self, CNPJ, nome, idade):
+    def __init__(self, cnpj, nome, idade):
         super().__init__(nome, idade)
-        self.CNPJ = CNPJ
+        self.cnpj = cnpj
 
-    def getCNPJ(self):
-        return self.CNPJ
+    def getcnpj(self):
+        return self.cnpj
 
-    def setCNPJ(self, CNPJ):
-        self.CNPJ = CNPJ
+    def setcnpj(self, cnpj):
+        self.cnpj = cnpj
