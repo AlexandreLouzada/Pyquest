@@ -9,4 +9,5 @@ massa = float(input('Digite a massa: '))
 while massa >= 0.5:
     massa /= 2
     tempo += 50
-print('Massa: {:.2f} Tempo {}' .format(massa,tempo))
+
+print('Massa: {:.2f} Tempo {}' .format(massa, tempo))
