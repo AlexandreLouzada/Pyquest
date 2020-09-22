@@ -17,9 +17,11 @@ escolha = """
 3 - TESOURA ✌
 ==============================
 {} ESCOLHE: """
+
 j1_escolha = int(input(escolha.format('JOGADOR 1')))
 j2_escolha = int(input(escolha.format('JOGADOR 2')))
 print('='*30)
+
 if (j1_escolha == 1) and (j2_escolha == 3):
     print('JOGADOR 1 ESMAGOU A TESOURA COM SUA PEDRA!!! ✊')
 elif (j1_escolha == 3) and (j2_escolha == 2):
