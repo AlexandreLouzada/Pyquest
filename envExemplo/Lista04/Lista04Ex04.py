@@ -1,5 +1,5 @@
 """
-Um programa que verifica de um valor inteiro
+Um programa que verifica se um valor inteiro
 é positivo, negativo ou igual a zero
 """
 
