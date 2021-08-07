@@ -1,5 +1,5 @@
 aprovados = 0
-quantidade = 4
+quantidade = 3
 
 for contador in range(quantidade):
     aluno = input('digite seu nome:')
@@ -10,6 +10,6 @@ for contador in range(quantidade):
 porcentagem_aprovados = aprovados/quantidade * 100
 
 print(f'Quantidade de pessoas aprovadas: {aprovados}')
-print(f'Porcentagem de pessoas aprovadas: {porcentagem_aprovados}')
+print(f'Porcentagem de pessoas aprovadas: {porcentagem_aprovados:.2f}')
 
 
