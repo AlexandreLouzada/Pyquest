@@ -14,6 +14,6 @@ for cont in range(2):
 
 media = soma/2
 
-print('A altura média é {:.2f}' .format(media))
-print('{} é a pessoa mais alta'.format(nome_alto))
-print('Sua altura é de {} metros'.format(maior_altura))
+print(f'A altura média é {media:.2f}')
+print(f'{nome_alto} é a pessoa mais alta')
+print(f'Sua altura é de {maior_altura} metros')

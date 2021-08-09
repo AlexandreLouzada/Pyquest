@@ -19,8 +19,8 @@ while altura > 0:
 total= inferior + superior + medio
 
 print('-*-' * 15)
-print('Pessoas com altura menor que 1.60 ------> {}' .format(inferior))
-print('Pessoas com altura maior que 1.80 ------> {}' .format(superior))
-print('Pessoas com altura entre 1.60 e 1.80 ---> {}' .format(medio))
-print('Total de pessoas cadastradas -----------> {}' .format(total))
-print('-*-' * 15)
+print(f'Pessoas com altura menor que 1.60 ------> {inferior}')
+print(f'Pessoas com altura maior que 1.80 ------> {superior}')
+print(f'Pessoas com altura entre 1.60 e 1.80 ---> {medio}')
+print(f'Total de pessoas cadastradas -----------> {total}')
+print(f'-*-' * 15)

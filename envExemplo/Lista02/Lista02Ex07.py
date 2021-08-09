@@ -9,4 +9,4 @@ while num != 0:
         maior = num
     num = int(input('Numero: '))
 
-print('O número maior é: {}', format(maior))
+print(f'O número maior é: {maior}')

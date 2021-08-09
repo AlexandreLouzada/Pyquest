@@ -22,6 +22,6 @@ while condição != 0:
     condição = int(input('Digite 0 para sair: '))
     print('-' * 20)
 
-print('O total de pessoas do sexo masculino : {}'.format(total_masculino))
-print('O total de pessoas do sexo feminino  : {}'.format(total_feminino))
-print('O total de pessoas do inteiro grupo  : {}'.format(total_geral))
+print(f'O total de pessoas do sexo masculino : {total_masculino}')
+print(f'O total de pessoas do sexo feminino  : {total_feminino}')
+print(f'O total de pessoas do inteiro grupo  : {total_geral}')

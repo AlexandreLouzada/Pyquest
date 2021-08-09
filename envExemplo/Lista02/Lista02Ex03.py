@@ -8,4 +8,4 @@ for cont in range(10):
     idade = int(input('Digite sua idade: '))
     soma += idade
 media = soma/10
-print('A média das idades é {:.2f}' .format(media))
+print(f'A média das idades é {media:.2f}')

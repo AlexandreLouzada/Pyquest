@@ -7,4 +7,4 @@ for cont in range(4):
     preço = float(input('Digite o preço: '))
     soma += preço
 
-print('O valor total será {:.2f}'.format(soma))
+print(f'O valor total será {soma:.2f}')

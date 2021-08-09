@@ -17,6 +17,6 @@ while idade > 0:
 porcentagem_menores = menores/total * 100
 porcentagem_adultos = adultos/total * 100
 
-print('Total de pessoas cadastradas ---------------> {}' .format(total))
-print('Porcentagem de pessoas adultas -------------> {:.2f}' .format(menores))
-print('Porcentagem de pessoas menores de idade ----> {:.2f}' .format(adultos))
+print(f'Total de pessoas cadastradas ---------------> {total}')
+print(f'Porcentagem de pessoas adultas -------------> {menores:.2f}')
+print(f'Porcentagem de pessoas menores de idade ----> {adultos:.2f}')

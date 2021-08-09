@@ -5,5 +5,5 @@ de centígrados em função de graus Farenheit, que variam de 100 a 150 de 1 em 
 """
 for f in range(100, 151):
     c = (5/9) * (f - 32)
-    print('{}°F é igual a {:.2f}°C. ' .format(f, c))
+    print('{f}°F é igual a {c:.2f}°C. ')
 

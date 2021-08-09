@@ -14,6 +14,6 @@ while número != 0:
         ímpar += 1
     número = int(input("Número: "))
 
-print('O total de números digitados foi de {}' .format(quantidade))
-print('A quantidade de números pares são {}' .format(par))
-print('A quantidade de números ímpares são {}' .format(ímpar))
+print(f'O total de números digitados foi de {quantidade}')
+print(f'A quantidade de números pares são {par}')
+print(f'A quantidade de números ímpares são {ímpar}')
