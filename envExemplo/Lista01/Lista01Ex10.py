@@ -12,4 +12,4 @@ if sexo == 'M':
     pesoideal= (72.7*h)-58
 elif sexo =='F':
     pesoideal= (62.1*h)-44.7
-print('seu peso ideal é de {:.2f} kg'.format(pesoideal))
+print(f'seu peso ideal é de {pesoideal:.2f} kg')
