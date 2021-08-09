@@ -10,5 +10,5 @@ x2 = int(input("Digite o valor de x2:"))
 y1 = int(input("Digite o valor de y1:"))
 y2 = int(input("Digite o valor de y2:"))
 resultado = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** (1/2)
-print('{:.2f}'.format(resultado))
+print(f'{resultado:.2f}')
 

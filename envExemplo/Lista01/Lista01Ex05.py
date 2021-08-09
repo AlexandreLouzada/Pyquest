@@ -15,4 +15,4 @@ elif sexo == 'F':
 else:
     salario_liquido = 0
 
-print('Seu salario liquido é de {}'.format(salario_liquido))
+print(f'Seu salario liquido é de {salario_liquido}')

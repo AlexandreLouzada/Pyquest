@@ -12,7 +12,7 @@ velocidade = int(input('digite a velocidade media:'))
 distancia = tempo * velocidade
 litros_usados = distancia / 12
 
-print('O tempo gasto foi de {:.2f} horas'.format(tempo))
-print('A velocidade media foi de {} km/h'.format(velocidade))
-print('A distancia percorrida foi de {} km'.format(distancia))
-print('A quantidade de combustivel foi de {:.2f} Litros'.format(litros_usados))
+print(f'O tempo gasto foi de {tempo:.2f} horas')
+print(f'A velocidade media foi de {velocidade} km/h')
+print(f'A distancia percorrida foi de {distancia} km')
+print(f'A quantidade de combustivel foi de {litros_usados:.2f} Litros')

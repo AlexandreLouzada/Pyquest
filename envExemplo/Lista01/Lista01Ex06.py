@@ -20,7 +20,7 @@ carbono = float(input('Digite o conteúdo de carbono :'))
 rokwell = float(input('Digite a dureza Rokwell......:'))
 tração = float(input('Digite a resistência a tração:'))
 
-print('Resultado do teste da amostra {}:'.format(amostra))
+print(f'Resultado do teste da amostra {amostra}:')
 
 if carbono < 7 and rokwell > 50 and tração > 80.000:
     print('Grau 10')
