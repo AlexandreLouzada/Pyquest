@@ -15,13 +15,13 @@ codigo=int(input('Digite o codigo do produto....:'))
 quantidade= int(input('Digite a quantidade do produto:'))
 if codigo == 100:
     soma = (quantidade*5.20)
-    print('o valor do seu cachorro-quente é de R${:.2f}'.format(soma))
+    print(f'o valor do seu cachorro-quente é de R${soma:.2f}')
 elif codigo == 101:
     soma = (quantidade*5.20)
-    print('o valor do seu Hambúrguer é de R${:.2f}'.format(soma))
+    print(f'o valor do seu Hambúrguer é de R${soma:.2f}')
 elif codigo == 102:
     soma = (quantidade*7.30)
-    print('o valor do seu Cheeseburguer é de R${:.2f}'.format(soma))
+    print(f'o valor do seu Cheeseburguer é de R${soma:.2f}')
 elif codigo == 103:
     soma = (quantidade*5.00)
-    print('o valor do seu Refrigerante é de R${:.2f}'.format(soma))
+    print(f'o valor do seu Refrigerante é de R${soma:.2f}')
