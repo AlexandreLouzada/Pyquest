@@ -20,5 +20,5 @@ elif saldo_medio > 400 and saldo_medio <= 600:
     percent= saldo_medio * 30/100
 else:
     percent= saldo_medio * 40/100
-print('Seu saldo médio é de {:.2f}'.format(saldo_medio))
-print('O valor de credito é de {:.2f}'.format(percent))
+print(f'Seu saldo médio é de {saldo_medio:.2f}')
+print(f'O valor de credito é de {percent:.2f}')
