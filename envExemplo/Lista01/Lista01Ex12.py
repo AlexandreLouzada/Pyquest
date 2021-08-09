@@ -12,8 +12,7 @@ inss= salario_bruto * 10/100
 ir= salario_bruto * 25/100
 sindicato = salario_bruto * 2/100
 salario_liquido= salario_bruto - (inss + ir + sindicato)
-print('O desconto do INSS é de R${:.2f}'.format(inss))
-print('O desconto do IR é de R${:.2f}'.format(ir))
-print('O desconto do sindicato é de R${:.2f}'.format(sindicato))
-print('O seu salario liquido é de R${:.2f}'.format(salario_liquido))
-
+print(f'O desconto do INSS é de R${inss:.2f}')
+print(f'O desconto do IR é de R${ir:.2f}')
+print(f'O desconto do sindicato é de R${sindicato:.2f}')
+print(f'O seu salario liquido é de R${salario_liquido:.2f}')

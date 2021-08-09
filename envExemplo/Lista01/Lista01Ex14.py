@@ -18,5 +18,5 @@ elif salario_bruto > 2500 and salario_bruto <= 3000:
 else:
     gratificaçao = salario_bruto * 20/100
 salario_liquido = salario_bruto + gratificaçao
-print('seu salario liquido é de R${}'.format(salario_liquido))
-print('Sua gratificação foi de R${}'.format(gratificaçao))
+print(f'seu salario liquido é de R${salario_liquido:.2f}')
+print(f'Sua gratificação foi de R${gratificaçao:.2f}')
