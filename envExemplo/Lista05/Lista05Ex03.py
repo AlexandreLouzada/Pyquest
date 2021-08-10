@@ -15,8 +15,8 @@ vendedor['nome'] = str(input('Nome do vendedor: '))
 tamanho_lista = int(input(f'Número de campanhas que {vendedor["nome"]} participou: '))
 
 # obtém a venda de cada campanha e insere na lista de vendas
-for c in range(0, tamanho_lista):
-    vendas.append(int(input(f'   Quantas vendas na campanha {c + 1}? ')))
+for contador in range(0, tamanho_lista):
+    vendas.append(int(input(f'   Quantas vendas na campanha {contador + 1}? ')))
 
 vendedor['venda'] = vendas[:]  # armazena a lista de vendas no dicionário
 vendedor['total'] = sum(vendas)  # armazena o total de vendas no dicionário
@@ -26,13 +26,13 @@ print(vendedor)  # exibe a estrutura do dicionário
 print('-=' * 30)
 
 # exibe a estrutura do dicionário de modo detalhado
-for k, v in vendedor.items():
-    print(f'O campo {k} tem o valor {v}')
+for chave, valor in vendedor.items():
+    print(f'O campo {chave} tem o valor {valor}')
 
 # exibe os dados obtidos e o total das vendas
 print('-=' * 30)
 print(f'O vendedor {vendedor["nome"]} fez {len(vendedor["venda"])} vendas.')
 
-for i, v in enumerate(vendedor['venda']):
-    print(f'    => Na campanha {i + 1}, fez {v} vendas.')
+for campanha, venda in enumerate(vendedor['venda']):
+    print(f'    => Na campanha {campanha + 1}, fez {venda} vendas.')
 print(f'Foi um total de {vendedor["total"]} vendas.')

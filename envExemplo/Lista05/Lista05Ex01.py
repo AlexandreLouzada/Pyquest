@@ -8,11 +8,11 @@ while True:
     candidato['nota'] = float(input('nota: '))
     listagem.append(candidato.copy())
     while True:
-        resp = str(input('Quer continuar? [S/N] ')).upper()[0]
-        if resp in 'SN':
+        resposta = str(input('Quer continuar? [S/N] ')).upper()[0]
+        if resposta in 'SN':
             break
         print('ERRO! Responda apenas S ou N.')
-    if resp == 'N':
+    if resposta == 'N':
         break
 
 print('-=' * 30)

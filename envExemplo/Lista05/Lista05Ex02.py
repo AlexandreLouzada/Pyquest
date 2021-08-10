@@ -22,27 +22,27 @@ while True:
     soma += aluno['nota']
     turma.append(aluno.copy())
     while True:
-        resp = str(input('Quer continuar? [S/N] ')).upper()[0]
-        if resp in 'SN':
+        resposta = str(input('Quer continuar? [S/N] ')).upper()[0]
+        if resposta in 'SN':
             break
         print('ERRO! Responda apenas S ou N.')
-    if resp == 'N':
+    if resposta == 'N':
         break
 print('-=' * 30)
 print(f'A) Ao todo temos {len(turma)} alunos cadastradas.')
 media = soma / len(turma)
 print(f'B) A média da turma é: {media:5.2f}')
 print('C) As mulheres cadastradas foram ', end='')
-for p in turma:
-    if p['sexo'] in 'Ff':
-        print(f'{p["nome"]} ', end='')
+for posição in turma:
+    if posição['sexo'] in 'Ff':
+        print(f'{posição["nome"]} ', end='')
 print()
 print('D) Lista das alunos que estão acima da média: ')
-for p in turma:
-    if p['nota'] > media:
+for posição in turma:
+    if posição['nota'] > media:
         print('    ', end='')
-        for k, v in p.items():
-            print(f'{k} = {v}; ', end='')
+        for chave, valor in posição.items():
+            print(f'{chave} = {valor}; ', end='')
         print()
 print('<< ENCERRADO >>')
 
