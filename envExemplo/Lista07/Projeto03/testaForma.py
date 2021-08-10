@@ -1,8 +1,8 @@
 from ClasseForma import FormaGeométrica, Quadrado, Triângulo
 
-o1 = FormaGeométrica('Azul')
-o2 = Quadrado('Verde', 5)
-o3 = Triângulo('Amarelo', 3, 2)
-print(o1.calc_area())
-print(o2.calc_area())
-print(o3.calc_area())
+objeto1 = FormaGeométrica('Azul')
+objeto2 = Quadrado('Verde', 5)
+objeto3 = Triângulo('Amarelo', 3, 2)
+print(objeto1.calc_area())
+print(objeto2.calc_area())
+print(objeto3.calc_area())
