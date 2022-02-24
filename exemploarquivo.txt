@@ -1,0 +1,6 @@
+Telefone;10
+mouse;5
+teclado;2
+Roteador;7
+impressora;9
+monitor;20
