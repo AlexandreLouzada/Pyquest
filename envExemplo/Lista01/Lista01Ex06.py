@@ -30,4 +30,3 @@ elif carbono < 7:
     print('Grau 8')
 else:
     print('Grau 7')
-
