@@ -3,16 +3,16 @@ class Produto(object):
         self.__fabricante = ''
         self.__preço = 0.0
 
-    def getfabricante(self):
+    def getFabricante(self):
         return f'{self.__fabricante:}'
 
     def setFabricante(self,f):
         self.__fabricante = f
 
-    def getpreço(self):
+    def getPreço(self):
         return f'R${self.__preço:.2f}'
 
-    def setpreço(self, p):
+    def setPreço(self, p):
         if p >= 0:
             self.__preço = p
 
