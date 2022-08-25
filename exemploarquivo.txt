@@ -5,3 +5,4 @@ Roteador;7
 impressora;9
 monitor;20
 Geladeira;10
+Fone quebrado;1
