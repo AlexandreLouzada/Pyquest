@@ -1,12 +1,6 @@
-sigla = 'SP'
-match sigla:
-    case 'RJ':
-        print('Rio de Janeiro')
-    case 'SP':
-        print('São Paulo')
-    case 'MG':
-        print('Minas Gerais')
-    case 'ES':
-        print('Espírito Santo')
-    case other:
-        print('A sigla não foi identificada como parte da região sudeste')
+idade = 20
+if idade >= 18:
+    print('Você é maior de idade!')
+    print('Parabéns!')
+else:
+    print('Você é menor de idade!')
