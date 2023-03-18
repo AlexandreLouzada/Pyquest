@@ -14,6 +14,7 @@ acima de 601	40% do valor do saldo médio
 saldo_medio= float(input('Informe seu saldo medio:'))
 if saldo_medio < 200:
     print('nenhum credito foi concedido')
+    percent = 0
 elif saldo_medio >= 200 and saldo_medio <= 400:
     percent= saldo_medio * 20/100
 elif saldo_medio > 400 and saldo_medio <= 600:

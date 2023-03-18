@@ -1,5 +1,5 @@
 """
-Escreva um programam que calcule o índice de massa corpórea (IMC) de uma pessoa,
+Escreva um programa que calcule o índice de massa corpórea (IMC) de uma pessoa,
 sendo o peso e a altura fornecidos pelo teclado. Apresentar na tela o peso, a altura
 e o IMC calculado.
 Exemplo: Valores fornecidos pelo teclado: Peso = 60kg e Altura = 1,67m
