@@ -1,0 +1,2 @@
+1,Teclado,9
+2,caneta,5
