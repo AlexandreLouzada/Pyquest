@@ -30,4 +30,21 @@ class Produto(ProdutoPerecivel, ProdutoImportado):
     def adicionarestoque(self, quantidade):
         self.quantidade += quantidade
 
-#FALTA EXIBIR DADOS PRECISO COMPLETAR AQUI!!!
+# Criar um objeto Produto
+produto1 = Produto(codigo=123, nome="Arroz", quantidade=50, data_validade="30/06/2023", pais_origem="Tailândia")
+
+# Mostrar detalhes do produto
+produto1.mostrardetalhes()
+
+# Adicionar estoque ao produto
+produto1.adicionarestoque(25)
+
+# Mostrar detalhes do produto novamente
+produto1.mostrardetalhes()
+
+# Verificar a validade do produto
+produto1.verificar_validade()
+
+# Verificar taxa de importação do produto
+produto1.verificar_taxa_importacao()
+
