@@ -30,3 +30,4 @@ class Produto(ProdutoPerecivel, ProdutoImportado):
     def adicionarestoque(self, quantidade):
         self.quantidade += quantidade
 
+#FALTA EXIBIR DADOS PRECISO COMPLETAR AQUI!!!
