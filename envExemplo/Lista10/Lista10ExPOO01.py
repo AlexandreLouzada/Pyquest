@@ -10,3 +10,4 @@ produto1.mostrar_detalhes()
 produto2.mostrar_detalhes()
 produto2.adicionar_estoque(3)
 produto2.mostrar_detalhes()
+
