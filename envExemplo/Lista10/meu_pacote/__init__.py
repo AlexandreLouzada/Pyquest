@@ -1,0 +1,2 @@
+from .produto import Produto
+
