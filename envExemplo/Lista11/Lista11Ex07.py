@@ -14,7 +14,7 @@ class CampanhaMarketing:
         return self.conversoes / self.cliques
 
 campanhas = [
-    CampanhaMarketing('Facebook Ads', 1000, 15000, 150),
+    CampanhaMarketing('Facebook Ads', 1000, 15000, 100),
     CampanhaMarketing('Google Ads', 1200, 10000, 200),
     CampanhaMarketing('Email Marketing', 500, 5000, 50),
     CampanhaMarketing('Instagram Ads', 800, 12000, 80),
