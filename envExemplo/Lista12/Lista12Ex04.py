@@ -1,4 +1,3 @@
-#decorator
 class Produto:
     def __init__(self, codigo, nome, quantidade, valor_unitario):
         self.codigo = codigo
@@ -16,7 +15,6 @@ class Produto:
         self.quantidade += quantidade
         print(f"Estoque atualizado: {self.quantidade}")
 
-
 class ProdutoDecorator:
     def __init__(self, produto):
         self.produto = produto
@@ -27,7 +25,6 @@ class ProdutoDecorator:
     def adiciona_estoque(self, quantidade):
         self.produto.adiciona_estoque(quantidade)
 
-
 class ProdutoComDesconto(ProdutoDecorator):
     def mostra_detalhes(self):
         super().mostra_detalhes()
@@ -35,7 +32,6 @@ class ProdutoComDesconto(ProdutoDecorator):
 
     def adiciona_estoque(self, quantidade):
         super().adiciona_estoque(quantidade)
-
 
 # Exemplo de uso
 produto_base = Produto(1, "Produto A", 10, 100)
