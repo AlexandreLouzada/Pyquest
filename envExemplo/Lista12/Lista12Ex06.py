@@ -1,4 +1,3 @@
-#strategy
 class Produto:
     def __init__(self, codigo, nome, quantidade, valor_unitario, estrategia_desconto):
         self.codigo = codigo
@@ -19,16 +18,13 @@ class Produto:
     def calcula_desconto(self):
         return self.estrategia_desconto.calcula_desconto(self.valor_unitario)
 
-
 class EstrategiaDesconto:
     def calcula_desconto(self, valor_unitario):
         raise NotImplementedError
 
-
 class DescontoNulo(EstrategiaDesconto):
     def calcula_desconto(self, valor_unitario):
         return 0.0
-
 
 class Desconto10Porcento(EstrategiaDesconto):
     def calcula_desconto(self, valor_unitario):

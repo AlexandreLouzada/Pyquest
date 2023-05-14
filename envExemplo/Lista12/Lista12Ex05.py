@@ -38,3 +38,4 @@ estoque_observer = EstoqueObserver()
 produto.adiciona_observer(estoque_observer)
 
 produto.adiciona_estoque(5)
+
