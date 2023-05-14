@@ -1,4 +1,3 @@
-#observer
 class Produto:
     def __init__(self, codigo, nome, quantidade, valor_unitario):
         self.codigo = codigo
@@ -26,7 +25,6 @@ class Produto:
     def adiciona_estoque(self, quantidade):
         self.quantidade += quantidade
         self.notifica_observers()
-
 
 class EstoqueObserver:
     def atualiza(self, produto):
