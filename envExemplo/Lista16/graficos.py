@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from nome_moedas import obter_nome_moeda
+from nomes_moedas import obter_nome_moeda
 
 
 def exibir_grafico_barras(moedas, valores):
