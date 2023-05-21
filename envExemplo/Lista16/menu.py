@@ -1,56 +1,44 @@
-from obter_cotacoes import obter_cotacoes
-from graficos import (
-    exibir_grafico_barras,
-    exibir_grafico_pizza,
-    exibir_grafico_linha,
-    exibir_grafico_dispersao,
-    exibir_grafico_area
-)
+import obter_cotacoes
+import graficos
 
 def exibir_menu():
-    print("=== Menu ===")
-    print("1. Gráfico de Barras")
-    print("2. Gráfico de Pizza")
-    print("3. Gráfico de Linha")
-    print("4. Gráfico de Dispersão")
-    print("5. Gráfico de Área")
-    print("0. Sair")
+    print("Escolha o tipo de gráfico:")
+    print("1 - Barras")
+    print("2 - Pizza")
+    print("3 - Dispersão")
+    print("0 - Sair")
 
-def selecionar_opcao():
-    opcao = input("Selecione uma opção: ")
-    return opcao
 
-def exibir_grafico(opcao, cotacoes):
-    moedas = list(cotacoes.keys())[:5]
-    valores = list(cotacoes.values())[:5]
+def obter_cotacao_moedas():
+    cotacoes = obter_cotacoes.obter_dados_cotacoes()
+    dolar = cotacoes["USD"]
+    euro = cotacoes["EUR"]
+    libra = cotacoes["GBP"]
+    print("Cotação das moedas em relação ao Real:")
+    print(f"Dólar Americano (USD): {dolar}")
+    print(f"Euro (EUR): {euro}")
+    print(f"Libra Esterlina (GBP): {libra}")
+    print()
 
-    if opcao == "1":
-        exibir_grafico_barras(moedas, valores)
-    elif opcao == "2":
-        exibir_grafico_pizza(moedas, valores)
-    elif opcao == "3":
-        exibir_grafico_linha(moedas, valores)
-    elif opcao == "4":
-        exibir_grafico_dispersao(moedas, valores)
-    elif opcao == "5":
-        exibir_grafico_area(moedas, valores)
-    else:
-        print("Opção inválida.")
+    moedas = ["USD - Dólar", "EUR - Euro", "GBP - Libra"]
+    valores = [dolar, euro, libra]
 
-def main():
-    cotacoes = obter_cotacoes()
+    while True:
+        exibir_menu()
+        opcao = input("Opção: ")
 
-    if cotacoes:
-        while True:
-            exibir_menu()
-            opcao = selecionar_opcao()
+        if opcao == "1":
+            graficos.exibir_grafico_barras(moedas, valores)
+        elif opcao == "2":
+            graficos.exibir_grafico_pizza(moedas, valores)
+        elif opcao == "3":
+            graficos.exibir_grafico_dispersao(moedas, valores)
+        elif opcao == "0":
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida. Por favor, escolha uma opção válida.")
 
-            if opcao == "0":
-                break
+# Obtém as cotações de moedas e exibe o gráfico de acordo com a opção escolhida pelo usuário
+obter_cotacao_moedas()
 
-            exibir_grafico(opcao, cotacoes)
-    else:
-        print("Não foi possível obter as cotações de moedas.")
-
-if __name__ == "__main__":
-    main()

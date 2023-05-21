@@ -1,83 +1,65 @@
 import requests
 import matplotlib.pyplot as plt
 
-def obter_cotacoes():
+def obter_cotacao_moedas():
     url = "https://api.exchangerate-api.com/v4/latest/BRL"
     response = requests.get(url)
     data = response.json()
 
     if response.status_code == 200:
-        return data["rates"]
-    else:
-        print(f"Erro ao obter as cotações de moedas: {response.status_code}")
-        return None
+        cotacoes = data["rates"]
+        dolar = cotacoes["USD"]
+        euro = cotacoes["EUR"]
+        libra = cotacoes["GBP"]
+        print("Cotação das moedas em relação ao Real:")
+        print(f"Dólar Americano (USD): {dolar}")
+        print(f"Euro (EUR): {euro}")
+        print(f"Libra Esterlina (GBP): {libra}")
+        print()
 
-def obter_nome_moeda(sigla):
-    nome_moedas = {
-        "USD": "Dólar Americano",
-        "EUR": "Euro",
-        "GBP": "Libra Esterlina",
-        "JPY": "Iene Japonês",
-        "CAD": "Dólar Canadense",
-    }
-    return nome_moedas.get(sigla, sigla)
-
-def exibir_graficos(cotacoes):
-    if cotacoes:
-        moedas = list(cotacoes.keys())[:5] # cinco principais moedas do mundo
-        valores = list(cotacoes.values())[:5]
-
-        # Converter as siglas para nomes de moedas compreensíveis
-        nomes_moedas = [obter_nome_moeda(sigla) for sigla in moedas]
 
         # Gráfico de barras
-        plt.figure(figsize=(10, 6))
-        plt.bar(nomes_moedas, valores)
-        plt.title("Cotação das Moedas em Relação ao Real")
-        plt.xlabel("Moedas")
-        plt.ylabel("Valor em Reais")
-        plt.xticks(rotation=45)
-        plt.show()
+        moedas = ["USD - Dólar", "EUR - Euro", "GBP - Libra"]
+        #moedas = ["USD", "EUR", "GBP"]
+        valores = [dolar, euro, libra]
 
-        # Gráfico de pizza
-        plt.figure(figsize=(8, 8))
-        plt.pie(valores, labels=nomes_moedas, autopct='%1.1f%%')
-        plt.title("Distribuição das Cotações das Moedas")
-        plt.legend(loc='upper right')
-        plt.show()
+        opcao = input("Escolha o tipo de gráfico (1 - Barras, 2 - Linhas, 3 - Pizza, 4 - Dispersão): ")
+        
+        if opcao == "1":
+            plt.bar(moedas, valores)
+            plt.xlabel("Moedas")
+            plt.ylabel("Cotação em relação ao Real")
+            plt.title("Cotação das moedas em relação ao Real")
+            plt.show()
+ 
+        elif opcao == "2":
+            # Gráfico de pizza
 
-        # Gráfico de linha
-        plt.figure(figsize=(10, 6))
-        plt.plot(nomes_moedas, valores, marker='o')
-        plt.title("Variação das Cotações das Moedas")
-        plt.xlabel("Moedas")
-        plt.ylabel("Valor em Reais")
-        plt.xticks(rotation=45)
-        plt.show()
+            plt.pie(valores, labels=moedas, autopct="%1.1f%%")
+            plt.title("Proporção das moedas em relação ao Real")
+            plt.show()
 
-        # Gráfico de dispersão
-        plt.figure(figsize=(10, 6))
-        plt.scatter(nomes_moedas, valores, color='red')
-        plt.title("Dispersão das Cotações das Moedas")
-        plt.xlabel("Moedas")
-        plt.ylabel("Valor em Reais")
-        plt.xticks(rotation=45)
-        plt.show()
+            plt.scatter(moedas, valores)
+            plt.xlabel("Moedas")
+            plt.ylabel("Cotação em relação ao Real")
+            plt.title("Relação entre as cotações das moedas em relação ao Real")
+            plt.show()
+            
+        elif opcao == "3":
+            # Gráfico de dispersão
+ 
+            plt.scatter(moedas, valores)
+            plt.xlabel("Moedas")
+            plt.ylabel("Cotação em relação ao Real")
+            plt.title("Relação entre as cotações das moedas em relação ao Real")
+            plt.show()
 
-        # Gráfico de área
-        plt.figure(figsize=(10, 6))
-        plt.stackplot(nomes_moedas, valores, labels=nomes_moedas)
-        plt.title("Variação das Cotações das Moedas")
-        plt.xlabel("Moedas")
-        plt.ylabel("Valor em Reais")
-        plt.xticks(rotation=45)
-        plt.legend(loc='upper left')
-        plt.show()
+        else:
+            print("Opção inválida.")
+
     else:
-        print("Não foi possível obter as cotações de moedas.")
+        print(f"Erro ao obter as cotações de moedas: {response.status_code}")
+        print()
 
-# Obtém as cotações de moedas
-cotacoes = obter_cotacoes()
-
-# Exibe os gráficos das cotações de moedas
-exibir_graficos(cotacoes)
+# Obtém as cotações de moedas e exibe o gráfico de acordo com a opção escolhida pelo usuário
+obter_cotacao_moedas()
