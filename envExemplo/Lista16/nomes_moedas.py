@@ -6,4 +6,4 @@ def obter_nome_moeda(sigla):
         "JPY": "Iene Japonês",
         "CAD": "Dólar Canadense",
     }
-    return nome_moedas.get(sigla, sigla)
+    return nome_moedas.get(sigla,sigla)
