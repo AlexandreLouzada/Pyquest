@@ -32,8 +32,8 @@ class Desconto10Porcento(EstrategiaDesconto):
         return valor_unitario * 0.1
 
 # Exemplo de uso
-produto_com_desconto_nulo = Produto(1, "Produto A", 10, 100, DescontoNulo())
-produto_com_desconto_10porcento = Produto(2, "Produto B", 5, 200, Desconto10Porcento())
+produto_com_desconto_nulo = Produto(1, "Mouse", 10, 100, DescontoNulo())
+produto_com_desconto_10porcento = Produto(2, "Teclado", 5, 200, Desconto10Porcento())
 
 print("Detalhes do Produto com Desconto Nulo:")
 produto_com_desconto_nulo.mostra_detalhes()

@@ -32,7 +32,7 @@ class EstoqueObserver:
 
 
 # Exemplo de uso
-produto = Produto(1, "Produto A", 10, 100)
+produto = Produto(1, "Mouse", 10, 100)
 
 estoque_observer = EstoqueObserver()
 produto.adiciona_observer(estoque_observer)

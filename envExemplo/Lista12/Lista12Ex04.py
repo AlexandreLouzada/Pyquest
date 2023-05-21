@@ -34,7 +34,7 @@ class ProdutoComDesconto(ProdutoDecorator):
         super().adiciona_estoque(quantidade)
 
 # Exemplo de uso
-produto_base = Produto(1, "Produto A", 10, 100)
+produto_base = Produto(1, "Mouse", 10, 100)
 produto_decorado = ProdutoComDesconto(produto_base)
 
 # Mostra os detalhes do produto com desconto
