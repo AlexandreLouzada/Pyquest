@@ -1,3 +1,4 @@
 123;jujuba;2;5.0
 125;chiclete;6;3.0
 190;relogio;12;100.0
+987;cebola;10;5.0
