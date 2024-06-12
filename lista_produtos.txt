@@ -2,3 +2,4 @@
 125;chiclete;6;3.0
 190;relogio;12;100.0
 987;cebola;10;5.0
+800;Dolly Guarana;2;10.0
